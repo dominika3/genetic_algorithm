@@ -1,13 +1,3 @@
-#
-# 1. inicjalizacja populacji bazowej
-# 2. ocena populacji bazowej
-# 3. while not warunek_stopu:
-#     4. Tt = selekcja populacji bazowej
-#     5. Ot = krzyżowanie Tt
-#     6. mutacja Ot
-#     7. ocena Ot
-#     8. Ot to nowa populacja bazowa
-
 import random
 from statistics import mean
 import numpy as np
@@ -65,8 +55,8 @@ def print_shortest_and_average_distance(evaluated_population: list[list, int]) -
     shortest_distance = min(distances)
     average_distance = mean(distances)
 
-    print('Najkrótszy dystans w pokoleniu bazowym: ' + str(shortest_distance) + '\n' +
-          'Średni dystans w pokoleniu bazowym: ' + str(average_distance))
+    print('Shortest distance in the initial generation : ' + str(shortest_distance) + '\n' +
+          'Average distance in the initial generation: ' + str(average_distance))
 
 
 def skewed_distribution(num_of_elements, sigma_scale, mean_value_position):
